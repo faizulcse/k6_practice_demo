@@ -5,7 +5,7 @@ import { envdata } from "../utils/helper.js";
 const env = envdata();
 export const options = {
   stages: [
-    { duration: "1m", target: 10 }, // ramp up to 400 users
+    { duration: "1m", target: 40 }, // ramp up to 400 users
     { duration: "5m", target: 40 }, // stay at 400 for ~4 hours
     { duration: "2m", target: 0 }, // scale down. (optional)
   ],
