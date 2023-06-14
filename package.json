@@ -1,0 +1,18 @@
+{
+  "name": "k6_practice_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api": "./k6 run ./scripts/api.js",
+    "api_parallel": "./k6 run ./scripts/api_parallel.js",
+    "api_data_provider": "./k6 run ./scripts/api_data_provider.js",
+    "api_vu_generator": "./k6 run ./scripts/api_vu_generator.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@azure/msal": "^1.4.5"
+  }
+}
