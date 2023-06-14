@@ -6,13 +6,12 @@
   "scripts": {
     "api": "./k6 run ./scripts/api.js",
     "api_parallel": "./k6 run ./scripts/api_parallel.js",
+    "api_sequential.js": "./k6 run ./scripts/api_sequential.js",
     "api_data_provider": "./k6 run ./scripts/api_data_provider.js",
-    "api_vu_generator": "./k6 run ./scripts/api_vu_generator.js"
+    "api_vu_generator": "./k6 run ./scripts/api_vu_generator.js",
+    "api_sock_test": "./k6 run ./scripts/api_sock_test.js -e ENV=test"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@azure/msal": "^1.4.5"
-  }
+  "license": "ISC"
 }

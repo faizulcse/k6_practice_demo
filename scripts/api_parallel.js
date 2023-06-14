@@ -28,12 +28,4 @@ export default function (data) {
   check(responses[3], { "check parallel api4 status 200": (r) => r.status == 200 });
   check(responses[4], { "check parallel api5 status 200": (r) => r.status == 200 });
   sleep(2);
-
-  // =========================== sequential api call =====================================
-  check(http.request("GET", `${env.baseUrl}/api/v1/api1`), { "check sequential api1 status 200": (r) => r.status == 200 });
-  check(http.request("GET", `${env.baseUrl}/api/v1/api2`), { "check sequential api2 status 200": (r) => r.status == 200 });
-  check(http.request("GET", `${env.baseUrl}/api/v1/api3`), { "check sequential api3 status 200": (r) => r.status == 200 });
-  check(http.request("GET", `${env.baseUrl}/api/v1/api4`), { "check sequential api4 status 200": (r) => r.status == 200 });
-  check(http.request("GET", `${env.baseUrl}/api/v1/api5`), { "check sequential api5 status 200": (r) => r.status == 200 });
-  sleep(2);
 }
